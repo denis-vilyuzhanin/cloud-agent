@@ -14,7 +14,7 @@
         },
         "ORDERED_ENV": {
             "description": "control the order env variables are prompted",
-            "order": 100
+            "order": 100,
             "value": "default",
         }
     },
