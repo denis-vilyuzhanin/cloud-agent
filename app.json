@@ -26,10 +26,8 @@
         "http2": false
     },
     "build": {
-        "skip": false,
-        "buildpacks": {
-            "builder": "some/builderimage"
-        }
+        "skip": false
+        
     },
     "hooks": {
         "prebuild": {
