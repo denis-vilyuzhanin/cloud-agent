@@ -1,5 +1,5 @@
 {
-    "name": "foo-app",
+    "name": "cloud-agent",
     "env": {
         "BACKGROUND_COLOR": {
             "description": "specify a css color",
@@ -25,7 +25,7 @@
         "http2": false
     },
     "build": {
-        "skip": false,
+        "skip": true,
         "buildpacks": {
             "builder": "some/builderimage"
         }
@@ -33,22 +33,22 @@
     "hooks": {
         "prebuild": {
             "commands": [
-                "./my-custom-prebuild"
+                "echo 'prebuilding ...'"
             ]
         },
         "postbuild": {
             "commands": [
-                "./my-custom-postbuild"
+                "echo 'postbuilding ...'"
             ]
         },
         "precreate": {
             "commands": [
-                "echo 'test'"
+                "echo 'creating...'"
             ]
         },
         "postcreate": {
             "commands": [
-                "./setup.sh"
+                "echo 'setuping...'"
             ]
         }
     }
